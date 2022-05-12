@@ -1,0 +1,12 @@
+MSO5000 digital probe. 
+
+The schematic was taken almost verbatim from Faeton's digital-probe-rigol-mso5000 (https://oshwlab.com/f33net/digital-probe-rigol-mso5000).
+As their work is acknowledged in the original work a special thank goes to people from EEVblog for pinout of the connector.
+
+Changes from Faeton's:
+The schematic and PCB were drawn with Kicad.
+The single LVDS buffer SN65LVDS1 was replaced with a 4-line buffer SN65LVDS04. 
+Changed linear regulator to MCP1825ST-3302E/DB which has a different pinout from original (available on Digikey)
+Inputs order was switched from original (now pin 0 is on the left and pin 15 is on the right) to make routing more "natural" and make the board more compact.
+
+TODO: Add option for switching tab from GND to Vin to make use of original regulator MC33375ST-3.3T3G.
